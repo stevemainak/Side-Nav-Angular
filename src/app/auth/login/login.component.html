@@ -1,0 +1,36 @@
+<div class="login-container">
+    <div class="login-box">
+      <h2>Login</h2>
+      <form>
+        <div class="input-group">
+          <label for="username">Username</label>
+          <input  [(ngModel)]="login.username" name="username" type="text" id="username" placeholder="Type your username" />
+        </div>
+        <div class="input-group">
+          <label for="username">Email</label>
+          <input [(ngModel)]="login.email" name="email" type="email" id="email" placeholder="Type your email" />
+        </div>
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input [(ngModel)]="login.password" name="password" type="password" id="password" placeholder="Type your password" />
+        </div>
+        <div class="forgot-password">
+          <a href="#">Forgot password?</a>
+        </div>
+        <button (click)="logUser()" type="submit" class="login-btn">LOGIN</button>
+      </form>
+      <div class="social-login">
+        <p>Or Sign Up Using</p>
+        <div class="social-icons">
+          <button class="facebook"><i class="fab fa-facebook-f"></i></button>
+          <button class="twitter"><i class="fab fa-twitter"></i></button>
+          <button class="google"><i class="fab fa-google"></i></button>
+        </div>
+      </div>
+      <div class="sign-up">
+        <p>Or Sign Up Using</p>
+        <a routerLink="/register">SIGN UP</a>
+      </div>
+    </div>
+  </div>
+  
